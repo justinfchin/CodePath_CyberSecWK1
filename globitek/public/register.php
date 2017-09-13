@@ -1,8 +1,12 @@
 <?php
- // require_once('../private/initialize.php'); @@@ TURNS THIS BACK ON
+ //turn this back on
+//require_once('../private/initialize.php');
 
   // Set default values for all variables the page needs.
-
+    $first_name = $_POST['first_name'] ?? '';
+    $last_name = $_POST['first_name'] ?? '';
+    $email = $_POST['first_name'] ?? '';
+    $username = $_POST['first_name'] ?? '';
   // if this is a POST request, process the form
   // Hint: private/functions.php can help
 
@@ -10,7 +14,20 @@
 
     // Perform Validations
     // Hint: Write these in private/validation_functions.php
+/*    $error = [];
 
+    if (is_blank($_POST['first_name'])) {
+        $errors[] = "First name cannot be blank.";
+    } elseif (!has_length($_POST['first_name'], ['min' => 2, 'max' => 20])) {
+        $errors[] = "First name must be between 2 and 20 characters.";
+    }
+
+    if (is_blank($_POST['last_name'])) {
+        $errors[] = "Last name cannot be blank.";
+    } elseif (!has_length($_POST['last_name'], ['min' => 2, 'max' => 30])) {
+        $errors[] = "Last name must be between 2 and 30 characters.";
+    }
+*/
     // if there were no errors, submit data to database
 
       // Write SQL INSERT statement
